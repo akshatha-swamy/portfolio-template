@@ -1,0 +1,814 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        /*mobile view css*/
+
+        /*Navbar css*/
+.navbar{
+    width: 100%;
+    height:100%;
+    background-color:#030b18;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+}
+.about{
+    color:white;
+    font-family: Russo One;
+}
+
+.me{
+    color:#FFAF45;
+    font-family: Russo One;
+}
+.nav-options{
+    display: none;
+}
+
+
+
+.hamburger
+{
+    color:white;
+    font-size: 30px;
+    margin: 3px;
+}
+.hamburger:hover{
+    cursor: pointer;
+    color: #FFAF45;
+}
+
+
+
+.hamburger-options{
+    display: none; 
+    position: absolute; 
+    top: 4 0px;
+    right:2px; 
+    background-color: #030b18;
+    min-width: 150px;
+    padding:10px;
+    border-radius: 8px;
+    z-index: 10px;
+    
+}
+.hamburger-options ul{
+    list-style-type:none;
+    color:white;
+}
+.hamburger-options ul li{
+    padding: 3px;
+    border-bottom: #FFAF45 2px solid;
+}
+.hamburger-options ul li:hover{
+    color:white;
+    cursor: pointer;
+    background-color: #FFAF45;
+    
+}
+
+.hamburger-options.active{
+    display: block;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+            /*home section css*/
+
+.home{
+    background-color:#20212f;
+    padding:40px 20px 40px 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px
+}
+
+
+.image {
+    height: 230px;
+      
+}
+
+.image img {
+    height: 100%;
+    border-radius: 8px;
+    
+   
+}
+
+.text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    font-family: Nunito;
+    
+}
+
+.welcome{
+    color:#FFAF45;
+}
+
+.name{
+    color:white;
+    font-size:1.4rem;
+    font-weight: bolder;
+}
+
+.intro{
+    color:#626f82;
+    padding:10px;
+    text-align: center;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: #FFAF45;
+    color: #030b18;
+    border-style: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: Russo One;
+    
+}
+
+.btn:hover{
+    color:white
+}
+
+            /*aboutme section css*/
+
+.aboutme {
+    width: 100%;
+    background-color: #030b18;
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px;
+     
+}
+
+.frame-container {
+    height: 240px;
+    width: 240px;
+    position: relative;
+}
+
+.frame {
+    height: 100%;
+    width: 100%;
+    border: #FFAF45 5px solid;
+    border-radius: 8px;
+}
+
+.aboutme .image {
+    height: 230px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10;
+}
+
+.about_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    font-family: Nunito;
+    
+}
+
+.about_intro{
+    color:#626f82;
+    text-align: center;
+}
+
+            /*services section css*/
+
+.services{
+    background-color: #20212f;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.services_text{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    font-family: Nunito;
+}
+
+.services_container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services_card{
+    background-color:#030b18;
+    width:250px;
+    height:240px ;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Nunito;
+
+}
+
+.services_card:hover{
+    scale: 1.05;
+}
+
+.services_card span {
+    color: #FFAF45;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.services_title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services_description{
+    color: #626f82;
+    text-align: center;
+    
+}
+
+            /*portfolio section css*/
+
+.portfolio {
+    background-color: #030b18;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px
+}
+
+.portfolio_text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-family: Nunito;
+}
+
+.portfolio_images{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image1 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.image_grid img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+}
+
+
+            /*experience section css*/
+
+.experience{
+    background-color: #20212f;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.experience_text{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    font-family: Nunito;
+}
+
+.experience_container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.experience_card{
+    background-color:#030b18;
+    width:250px;
+    height:260px ;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Nunito;
+
+}
+
+.experience_card:hover{
+    scale: 1.05;
+}
+
+.experience_card span {
+    color:#626f82;
+    font-size: 15px;
+    
+    
+}
+
+.experience_title{
+    color:#FFAF45;
+    font-size: 20px;
+    
+}
+
+.experience_description{
+    color: #626f82;
+}
+
+.experience .tool{
+    color:white;
+}
+
+            /*contact section css*/
+
+.contact{
+    padding: 30px;
+    background-color: #030b18;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.contact_text{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    font-family: Nunito;
+}
+
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_info{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 300px;
+    font-family: Nunito;
+}
+
+.contact_info span{
+    color: #FFAF45;
+    
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width:300px;
+    align-items: center;
+}
+
+
+
+.contact_form input[type="text"],
+.contact_form textarea {
+            height: 40px; 
+            width: 100%; 
+            font-size: 16px;
+            padding: 10px; 
+            margin-bottom: 10px; 
+            border:none; 
+            border-radius: 4px;
+            background-color: #626f82; 
+            color: white;
+
+ }
+
+.contact_form textarea {
+    height: 120px; 
+    resize: vertical; 
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    color:white;
+    font-family: Nunito;
+   
+}
+
+.about_text p{
+     color: #626f82;
+            
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+            
+}
+
+.icons span{
+     padding:10px;
+    color:white;
+    font-size: 20px;
+ }
+
+.icons span:hover{
+    color:#FFAF45;
+    cursor: pointer;
+}
+
+
+
+
+/*for tablet view*/
+
+@media(min-width:768px){
+   
+                /*navbar section css*/
+    .navbar{
+        min-height: 60px;
+        padding: 0 40px 0 40px;
+    }
+
+    .about{
+        font-size: 20px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .hamburger-options{
+        display: none;
+    }
+
+    .nav-options{
+        display: block;
+    }
+
+    .nav-options ul{
+        list-style-type:none;
+        font-family: Kdam Thmor Pro;
+        display: flex;
+        gap: 20px;
+        color: white;
+    }
+
+    .nav-options ul li a:hover{
+        color:#FFAF45;
+        cursor: pointer;
+    }
+    
+                /*home section css*/
+    .home{
+        flex-direction: row;
+        padding:50px;
+        gap:60px
+    }
+
+    .text{
+        align-items:flex-start;
+    }
+
+    .intro{
+        text-align: left;
+        padding: 0;
+    }
+
+                /*aboutme section css*/
+
+    .aboutme{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 50px;
+        gap:90px;
+    }
+
+    .frame{
+        width:240px !important;
+    }
+
+    .about_text_container{
+        align-items:flex-start;
+    }
+    
+    .about_intro{
+        text-align: left;
+    }
+
+                /*services section css*/
+    .services{
+        padding:60px; 
+        gap:50px; 
+    }
+
+    .services_container{
+        flex-direction: row;
+        gap:50px;
+        
+    }
+
+    .services_card{
+        height: 320px;
+        gap:20px;
+    }
+
+    .services_text .about_intro{
+        width:700px;
+    }
+
+    .services_text{
+        text-align: left;
+    }
+
+                /*portfolio section css*/
+
+    .portfolio{
+        padding: 50px;
+        gap:50px;
+    }
+
+    .portfolio_images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .image1 {
+       width:400px;
+       height:270px;
+      
+    }
+    
+    .image_grid {
+        width:270px;
+        height: 265px;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+    
+    .image_grid img {
+        width: 100%; 
+        height: 100%;
+    }
+
+    .portfolio_text .about_intro{
+        width:700px;
+        text-align: center;
+    }
+
+               /*experience section css*/
+
+    .experience{
+        padding:60px; 
+        gap:50px; 
+    }
+
+    .experience_container{
+        flex-direction: row;
+        gap:40px;
+        
+    }
+
+    .experience_card{
+        height: 300px;
+        width:300px;
+        
+    }
+
+    .experience_text .about_intro{
+        width:700px;
+    }
+
+    .experience_text{
+        text-align: left;
+    }
+
+ 
+                /*contact section css*/
+
+    .contact_text .about_intro{
+        width:700px;
+        text-align: center;
+    }
+
+    .contact_container{
+        flex-direction: row;
+        gap:90px
+    }
+
+    .contact_info{
+        font-size: 20px;
+    }
+   
+    .about_text p{
+        font-size: 15px;
+        width: 600px;
+        text-align: center;    
+    }
+    
+}
+
+
+
+
+/*for desktop view*/
+
+@media(min-width:1024px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+                /*home section css*/
+
+    .home{
+        padding:60px 90px 60px 90px;
+        gap:110px;
+    }
+
+    .image{
+        height: 325px;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+                /*aboutme section css*/
+
+    .aboutme{
+        padding:70px 80px 50px 80px;
+        width: 100%;
+        height:400px;
+        gap:140px;
+    }
+
+    .about_text_container{
+        padding: 40px;
+    }
+
+    .frame{
+        height:300px;
+        width:300px !important;
+    }
+
+    .aboutme .image{
+        height:300px;
+        top:-20px;
+        left:20px
+    }
+    
+            /*services section css*/
+
+    .services_container{
+        gap:100px;
+    }
+
+    .services{
+        padding: 50px 80px 50px 80px;
+    }
+
+    .services_card{
+        width: 320px;
+        height:300px
+    }
+
+    .services_title{
+        font-size: 23px;
+    }
+
+                /*portfolio section css*/
+
+    .image1 {
+        width:500px;
+        height:370px;
+     }
+
+     .image_grid {
+        width:370px;
+        height: 330px;
+        margin-bottom: 33px;
+        
+     }
+                     /*experience section css*/
+    
+    .experience_container{
+        gap:100px;
+    }
+
+    .experience{
+        padding: 50px 80px 50px 80px;
+    }
+
+    .experience_card{
+        width: 320px;
+    }
+
+    .experience_title{
+        font-size: 23px;
+    }
+
+
+
+                /*contact section css*/
+     .contact_container{
+        flex-direction: row;
+        gap:120px
+    }
+
+    .contact{
+        padding:50px 80px;
+    }
+
+                /*onScroll animation*/
+
+    section .animate {
+        transition: transform 1s;
+    }
+    
+    .home .animate,
+     .services .animate,
+     .experience .animate{
+        transform: translateX(-100%); /
+    }
+    
+    .aboutme .animate,
+    .portfolio .animate,
+    .contact .animate {
+        transform: translateX(100%); 
+    }
+    
+    .home.show-animate .animate,
+    .services.show-animate .animate,
+    .experience.show-animate .animate{
+        transform: translateX(0);
+    }
+
+    .aboutme.show-animate .animate,
+    .portfolio.show-animate .animate,
+    .contact.show-animate .animate {
+        transform: translateX(0); 
+    }  
+}
